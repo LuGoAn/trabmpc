@@ -1,0 +1,197 @@
+<meta charset="utf-8">
+<script>
+
+var p = prompt("A proposição p é verdadeira ou falsa? V para verdadeiro e F para falsa");
+var np = prompt("Tem negação para a proposição p? S para sim e N para não");
+var q = prompt("A proposição q é verdadeira ou falsa? V para verdadeiro e F para falsa");
+var nq = prompt("Tem negação para a proposição p? S para sim e N para não");
+var con = prompt("Qual o conectivo? ^ / v / -> / <->");
+
+
+if( p == "V" && np == "S" )
+{
+    document.write ("O valor de ~p: F <p>");
+        var con1 = "~p";
+}
+
+if( p == "F" && np == "S")
+{
+    document.write("O valor de ~p: V <p>");
+        var con1 = "~p";
+}
+
+if( p == "V" && np == "N")
+{
+    document.write("O valor de p: V <p>");
+        var con1 = "p";
+}
+
+if( p == "F" && np == "N")
+{
+    document.write("O valor de p: F <p>");
+        var con1 = "p";
+}
+
+if( q == "V" && nq == "S" )
+{
+    document.write ("O valor de ~q: F <p>");
+        var con2 = "~q";
+}
+
+if( q == "F" && nq == "S")
+{
+    document.write("O valor de ~q: V <p>");
+        var con2 = "~q";
+}
+
+if( q == "V" && nq == "N")
+{
+    document.write("O valor de q: V <p>");
+        var con2 = "q";
+}
+
+if( q == "F" && nq == "N")
+{
+    document.write("O valor de q: F <p>");
+        var con2 = "q";
+}
+
+if(p == "V" && np == "S")
+{
+    p = "F";
+}
+
+else {
+    if( p == "F" && np == "S")
+    {
+        p = "V";
+    }
+}
+
+if( q == "V" && nq == "S")
+{
+    q = "F";
+}
+
+else {
+    if( q == "F" && nq == "S")
+    {
+        q = "V";
+    }
+}
+
+if( con == "^")
+{
+    document.write("Conectivo: Conjunção <p>");
+}
+
+if( con == "v")
+{
+    document.write("Conectivo: Disjunção <p>");
+}
+
+if( con == "->")
+{
+    document.write("Conectivo: Condicional <p>");
+}
+
+if( con == "<->")
+{
+    document.write("Conectivo: Bicondicional <p>");
+}
+
+
+if( p == "V" && q == "V")
+{
+    if( con == "^")
+    {
+        document.write(con1 + " ^ " + con2 + " = Verdadeiro");
+    }
+
+    if( con == "v")
+    {
+        document.write(con1 + " v " + con2 + " = Verdadeiro");
+    }
+
+    if( con == "->")
+    {
+        document.write(con1 + " -> " + con2 + " = Verdadeiro");
+    }
+
+    if( con == "<->")
+    {
+        document.write(con1 + " <-> " + con2 + " = Verdadeiro");
+    }
+}
+
+if( p == "V" && q == "F")
+{
+    if( con == "^")
+    {
+        document.write(con1 + " ^ " + con2 + " = Falso");
+    }
+
+    if( con == "v")
+    {
+        document.write(con1 + " v " + con2 + " = Falso");
+    }
+
+    if( con == "->")
+    {
+        document.write(con1 + " -> " + con2 + " = Falso");
+    }
+
+    if( con == "<->")
+    {
+        document.write(con1 + " <-> " + con2 + " = Falso");
+    }
+}
+
+if( p == "F" && q == "V")
+{
+    if( con == "^")
+    {
+        document.write(con1 + " ^ " + con2 + " = Falso");
+    }
+
+    if( con == "v")
+    {
+        document.write(con1 + " v " + con2 + " = Verdadeiro");
+    }
+
+    if( con == "->")
+    {
+        document.write(con1 + " -> " + con2 + " = Verdadeiro");
+    }
+
+    if( con == "<->")
+    {
+        document.write(con1 + " <-> " + con2 + " = Falso");
+    }
+}
+
+if( p == "F" && q == "F")
+{
+    if( con == "^")
+    {
+        document.write(con1 + " ^ " + con2 + " = Falso");
+    }
+
+    if( con == "v")
+    {
+        document.write(con1 + " v " + con2 + " = Falso");
+    }
+
+    if( con == "->")
+    {
+        document.write(con1 + " -> " + con2 + " = Verdadeiro");
+    }
+
+    if( con == "<->")
+    {
+        document.write(con1 + " <-> " + con2 + " = Verdadeiro");
+    }
+}
+
+
+</script>
