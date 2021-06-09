@@ -133,7 +133,7 @@ if( p == "V" && q == "F")
 
     if( con == "v")
     {
-        document.write(con1 + " v " + con2 + " = Falso");
+        document.write(con1 + " v " + con2 + " = Verdadeiro");
     }
 
     if( con == "->")
