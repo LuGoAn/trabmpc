@@ -82,22 +82,22 @@ else {
 
 if( con == "^")
 {
-    document.write("Conectivo: Conjunção <p>");
+    document.write("Conectivo: Conjunção <strong>(^)</strong> <p>");
 }
 
 if( con == "v")
 {
-    document.write("Conectivo: Disjunção <p>");
+    document.write("Conectivo: Disjunção <strong>(v)</strong> <p>");
 }
 
 if( con == "->")
 {
-    document.write("Conectivo: Condicional <p>");
+    document.write("Conectivo: Condicional <strong>(->)</strong> <p>");
 }
 
 if( con == "<->")
 {
-    document.write("Conectivo: Bicondicional <p>");
+    document.write("Conectivo: Bicondicional <strong>(<->)</strong> <p>");
 }
 
 
